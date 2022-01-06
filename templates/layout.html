@@ -16,11 +16,11 @@
     <body>
         
         <nav class="navbar navbar-expand-md navbar-light bg-light border">
-            <a class="navbar-brand" href="/"><span>Hjem</span></a>
+            |&nbsp;&nbsp;<a class="navbar-brand" href="/"><span>Hjem</span></a>&nbsp;|&nbsp;
             {% for link in navbar %}
                 {% if link[:-5] != "index" %}
                     {% if link[:-5] != "layout" %}
-                        <a class="navbar-brand" href="/{{ link[:-5] }}"><span>{{ link[:-5] }}</span></a>
+                    &nbsp;<a class="navbar-brand" href="/{{ link[:-5] }}"><span>{{ link[:-5] }}</span></a>&nbsp;|
                     {% endif %}
                 {% endif %}
             {% endfor %}
